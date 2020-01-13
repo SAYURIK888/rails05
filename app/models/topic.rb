@@ -3,7 +3,10 @@ class Topic < ApplicationRecord
   validates :description, presence: true
   validates :image, presence: true
   
-  has_secure_password
+  belongs_to :user
 
-  has_many :topics
+  mount_uploader :image, ImageUploader
+  # has_secure_password
+
+  # has_many :topics
 end
