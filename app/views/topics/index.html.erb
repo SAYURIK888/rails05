@@ -25,6 +25,15 @@
             <p class="topic-text">
               <%= topic.description %>
             </p>
+            <h4 class="topic-text">コメント</h4>
+              <% topic.comments.each do |comment| %>
+            <h5 class="topic-author">
+              <%= comment.user.name %>
+            </h5>
+          <p class="topic-text">
+              <%= comment.description %>
+          </p>
+          <% end %>
           </div>
         </div>
       </div>
