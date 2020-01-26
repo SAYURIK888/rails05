@@ -11,10 +11,10 @@
             <%= f.file_field :image%>
           </div>
 
-          <!--<div class="form-group">-->
-          <!--  <%= f.label :description %>-->
-          <!--  <%= f.text_area :description, class: 'form-control' %>-->
-          <!--</div>-->
+          <div class="form-group">
+            <%= f.label :description %>
+            <%= f.text_area :description, class: 'form-control' %>
+          </div>
           <!--ログイン-->
           <% if logged_in? %> 
           <%= f.submit '投稿', class: 'btn btn-black btn-block' %>
